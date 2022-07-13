@@ -1,0 +1,8 @@
+.ipynb_checkpoints
+.DS_Store
+__pycache__
+*.pytest_cache
+.gitattributes
+imdb.db
+!*.zip
+A Genre Study first draft - a lot of graphs.ipynb
