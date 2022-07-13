@@ -89,7 +89,7 @@ When to release?
 One more element that was worthy of investigation and to be taken into account in trying to produce the most profitable movies is the best time of the year to release a movie.
 
 ### Visual 3
-![Gross and Budget per month](./images/Blueprint.png)
+![Gross and Budget per month](./images/Graphs/Domestic_Gross_per_genre.png.png)
 
 The data demonstrated the seasons in which the profit is the highest are the summer and the fall. In particular the months in which the gross income is highest are June and November. This trend is also related to the budgets, as we can observe lower budget movies are usually being released during the less profitable months. It is logical to wait for the most profitable months to release a high budget blockbuster movie, instead of risking a lower return by releasing it during months in which people don't seem to go to the movies as much.
 
