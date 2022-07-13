@@ -63,20 +63,52 @@ Here is an example of how to embed images from your sub-folder:
 ### Visual 1
 ![graph1](./images/Graphs/ROI per genre.png)
 
+Looking at this result I have decided to combine Musical and Music as a genre because of their similarities and also because there might have been some imprecision in which the movie genres were assigned, since their figures are so similar. I also made this choice to include in our study the Adventure genre, which I think is a very valuable one for Microsoft, as I will explain later.
+
+So all this said: We discovered that the top five genres with higest return on investment are Musical, Animation, Horror, Sci-Fi and Adventure.
+
+Now let's calculate the ROI for the top 5 genres and for all the other genres together.
+
+ROI for the top 5 genres is: 278.874 
+ROI for the rest of the genres is: 170.308
+This is a remarkable result, as the return on investment in the genres that we identified is 1.6 times higher than for the other genres!
+
+### What makes a movie more profitable?
+First, I considered the number of people that a movie is known for to see if there is any correlation with the movie gross income.
+
+### Visual 2
+![graph2](./images/Graphs/Scatter known people gross.png)
+It looks like there is a positive correlation between number of famous people in a movie and worldwide gross income.
+I calculated it to be able to quantify:
+
+Correlation:  0.5306527988979541
+The correlation is a normalized value which means that it spans between 1 and 0.
+A 0.5 correlation is considered a moderate positive one.
+
+When to release?
+One more element that was worthy of investigation and to be taken into account in trying to produce the most profitable movies is the best time of the year to release a movie.
+
+### Visual 3
+![graph2](./images/Graphs/Gross and Budget per month.png)
+
+The data demonstrated the seasons in which the profit is the highest are the summer and the fall. In particular the months in which the gross income is highest are June and November. This trend is also related to the budgets, as we can observe lower budget movies are usually being released during the less profitable months. It is logical to wait for the most profitable months to release a high budget blockbuster movie, instead of risking a lower return by releasing it during months in which people don't seem to go to the movies as much.
+
+
 ## Conclusions
-
-Provide your conclusions about the work you've done, including any limitations or next steps.
-
-***
-Questions to consider:
-* What would you recommend the business do as a result of this work?
-* What are some reasons why your analysis might not fully solve the business problem?
-* What else could you do in the future to improve this project?
-***
+The study on genre revealed five genres that are roughly twice as profitable as the rest of the genres.
+Microsoft should focus on specific genres (Musical, Animation, Horror, Sci-Fi and Adventure) to achieve highest profitability.
+Microsoft should also take into consideration what it already is familiar with - the video game industry. Among these genres, animation, adventure and science fiction can be perfect candidates for Microsoft to create video games based on the movies.
+When a higher budget is available, Microsoft should consider investing it in having famous writers, directors and actors in their movies, as this tends to increase the gross.
+In deciding when to release a movie, the higher budget movies should be released in the summer and fall months, in particular July and November.
+### For future consideration:
+To deepen this proposal it would be critical to also study marketing as part of the budget, to have a more precise sense of the profit of the movies. Taking into consideration the impact that the internet and cell phones have had on marketing, exposure to movies has radically changed in the past 10-20 years and should be taken into account.
+Inflation is another factor that should be considered when calculating and comparing monetary values over different years and decades.
+A further inquiry into the months for movie releases separated by genre could also be helpful to decide more specifically when to release which movie.
+Separating data according to smaller intervals is also key as genres of movies could be changing in popularity as compared to several years ago (for example, the dominance of superhero movies).
 
 ## For More Information
 
-Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-template.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
+Please review our full analysis in [our Jupyter Notebook](./A Genre Study.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
 
 For any additional questions, please contact **name & email, name & email**
 
