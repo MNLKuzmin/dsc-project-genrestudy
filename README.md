@@ -61,7 +61,7 @@ ROI, return on investment, is a performance measure to evaluate the efficiency o
 Here is an example of how to embed images from your sub-folder:
 
 ### Visual 1
-![ROI per genre](./images/Graphs/ROI per genre.png)
+![ROI per genre](./images/Graphs/ROI_per_genre_with_lines.png)
 
 Looking at this result I have decided to combine Musical and Music as a genre because of their similarities and also because there might have been some imprecision in which the movie genres were assigned, since their figures are so similar. I also made this choice to include in our study the Adventure genre, which I think is a very valuable one for Microsoft, as I will explain later.
 
@@ -77,7 +77,7 @@ This is a remarkable result, as the return on investment in the genres that we i
 First, I considered the number of people that a movie is known for to see if there is any correlation with the movie gross income.
 
 ### Visual 2
-![Scatter known people gross](./images/Graphs/Scatter known people gross.png)
+![Scatter known people gross](./images/Graphs/Scatter_known_people_gross.png)
 It looks like there is a positive correlation between number of famous people in a movie and worldwide gross income.
 I calculated it to be able to quantify:
 
@@ -89,7 +89,7 @@ When to release?
 One more element that was worthy of investigation and to be taken into account in trying to produce the most profitable movies is the best time of the year to release a movie.
 
 ### Visual 3
-![Gross and Budget per month](./images/Graphs/Domestic_Gross_per_genre.png.png)
+![Gross and Budget per month](./images/Graphs/Gross_and_Budget_per_month.png)
 
 The data demonstrated the seasons in which the profit is the highest are the summer and the fall. In particular the months in which the gross income is highest are June and November. This trend is also related to the budgets, as we can observe lower budget movies are usually being released during the less profitable months. It is logical to wait for the most profitable months to release a high budget blockbuster movie, instead of risking a lower return by releasing it during months in which people don't seem to go to the movies as much.
 
