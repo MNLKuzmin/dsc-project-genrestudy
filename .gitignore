@@ -5,4 +5,3 @@ __pycache__
 .gitattributes
 imdb.db
 !*.zip
-A Genre Study first draft - a lot of graphs.ipynb
