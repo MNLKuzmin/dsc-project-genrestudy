@@ -25,20 +25,17 @@ And finally:
 
 ## Data
 
-The data that was provided for this study consists of some tabular files (csv and tsv formats) that were taken by a few websites. Most of them have informations about the movie budget, gross income (domestic and worldwide), number of reviews and average reviews, movie genre and so on.
-Another set of data we have is contained in a database (format SQL) that we can extract information from.
-Beside the basic information that also the other websites provide, this database contains also the names of directors and writers for the movies, and a list of the people that each movie is known for.
+Data preparation included:
+Changing the format of some data
+Handling null values
+Removing outliers when appropriate
+Generating new variables for the study (net income, ROI)
 
-Preparing the data was key prior to reaching any conclusions. 
-First, I had to convert the type of some of the data, that represented numbers but was in the format of strings. 
+Data Modeling:
+Using methods to group and separate the data 
+Studying trends in the data thus organized
+Calculating statistical values like mean, correlation and IQR
 
-Second, in order to identify the genre of the movies I had to split the string that describes the genre and convert that into a list, to be able to use the .explode() method to separate the movies that have multiple genres.
-
-Third, I deleted the missing values that were present since there were only a few movies without a genre and compared to the number of entries I have the NaN values seemed negligible.
-
-Fourth, I decided not to remove the outliers yet, since there is something that we can learn from the movie with the highest income or lowest budget.
-
-However, I did decide to remove them for the last step of the analysis, when calculating the averages of budget and gross.
 
 ## Methods
 
@@ -56,16 +53,13 @@ Finally going back to the main database I calculated what is the gross income an
 
 ## Results
 
-ROI, return on investment, is a performance measure to evaluate the efficiency or profitability of an investment. It is calculated as net income versus investment and it's expressed at a percentage. This is the most relevant of the figures since it keeps into account the budget and it is normalized so it can give us a more objective idea of how much a movie or a genre is actually profitable, all things considered. Let us calculate it:
+ROI, return on investment, is a performance measure to evaluate the efficiency or profitability of an investment.
+Let us calculate it:
 
-Here is an example of how to embed images from your sub-folder:
-
-### Visual 1
+### ROI per Genre
 ![ROI per genre](./images/Graphs/ROI_per_genre_with_lines.png)
 
-Looking at this result I have decided to combine Musical and Music as a genre because of their similarities and also because there might have been some imprecision in which the movie genres were assigned, since their figures are so similar. I also made this choice to include in our study the Adventure genre, which I think is a very valuable one for Microsoft, as I will explain later.
-
-So all this said: We discovered that the top five genres with higest return on investment are Musical, Animation, Horror, Sci-Fi and Adventure.
+I discovered that the top five genres with higest return on investment are Musical, Animation, Horror, Sci-Fi and Adventure.
 
 Now let's calculate the ROI for the top 5 genres and for all the other genres together.
 
@@ -76,7 +70,7 @@ This is a remarkable result, as the return on investment in the genres that we i
 ### What makes a movie more profitable?
 First, I considered the number of people that a movie is known for to see if there is any correlation with the movie gross income.
 
-### Visual 2
+### Known people vs gross
 ![Scatter known people gross](./images/Graphs/Scatter_known_people_gross.png)
 It looks like there is a positive correlation between number of famous people in a movie and worldwide gross income.
 I calculated it to be able to quantify:
@@ -85,10 +79,10 @@ Correlation:  0.5306527988979541
 The correlation is a normalized value which means that it spans between 1 and 0.
 A 0.5 correlation is considered a moderate positive one.
 
-When to release?
+### When to release?
 One more element that was worthy of investigation and to be taken into account in trying to produce the most profitable movies is the best time of the year to release a movie.
 
-### Visual 3
+### Gross and Budget per month
 ![Gross and Budget per month](./images/Graphs/Gross_and_Budget_per_month.png)
 
 The data demonstrated the seasons in which the profit is the highest are the summer and the fall. In particular the months in which the gross income is highest are June and November. This trend is also related to the budgets, as we can observe lower budget movies are usually being released during the less profitable months. It is logical to wait for the most profitable months to release a high budget blockbuster movie, instead of risking a lower return by releasing it during months in which people don't seem to go to the movies as much.
