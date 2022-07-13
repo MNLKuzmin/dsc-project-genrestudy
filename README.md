@@ -108,18 +108,48 @@ Separating data according to smaller intervals is also key as genres of movies c
 
 ## For More Information
 
-Please review our full analysis in [our Jupyter Notebook](./A Genre Study.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
+Please review our full analysis in [our Jupyter Notebook](./A_Genre_Study.ipynb) or our [presentation](./Presentation.pdf).
 
-For any additional questions, please contact **name & email, name & email**
+For any additional questions, please contact **Maria Kuzmin, marianlkuzmin@gmail.com**
 
 ## Repository Structure
 
 Describe the structure of your repository and its contents, for example:
 
 ```
-├── README.md                           <- The top-level README for reviewers of this project
-├── dsc-phase1-project-template.ipynb   <- Narrative documentation of analysis in Jupyter notebook
-├── DS_Project_Presentation.pdf         <- PDF version of project presentation
-├── data                                <- Both sourced externally and generated from code
-└── images                              <- Both sourced externally and generated from code
+
+├── .ipynb_checkpoints
+     └── A Genre Study first draft - a lot of graphs-checkpoint.ipynb
+├── zippedData
+
+    └── bom.movie_gross.csv.gz
+    └── imdb.db
+    └── imdb.db.zip
+    └── rt.movie_info.tsv
+    └── rt.reviews.tsv
+    └── tbdb.movies.csv
+    └── tn.movie_budgets.csv
+
+├── images
+    └── blueprint.png
+    └── director_shot.png
+    └── viz1.png
+    ├── Graphs
+        └──Domestic_Gross_per_genre.png
+        └──Domestic_Gross_per_month_of_release.png
+        └──Domestic_net_per_genre.png
+        └──Gross_and_Budget_per_month.png
+        └──Production_Budget_per_month_of_release.png
+        └──ROI_per_genre_with_lines.png
+        └──ROI_per_genre_without_lines.png
+        └──Scatter_known_people_budget.png
+        └──Scatter_known_people_gross.png
+        └──World_Gross_per_month_of_release.png
+        └──Worldwide_gross_per_Genre.png
+        └──Worldwide_net_per_genre.png
+ ├── .gitignore
+ ├── LICENSE.md
+ ├── README.md
+ ├── Presentation.pdf
+ └── A_Genre_Study.ipynb
 ```
