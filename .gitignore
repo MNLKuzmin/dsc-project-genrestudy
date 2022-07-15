@@ -4,4 +4,5 @@ __pycache__
 *.pytest_cache
 .gitattributes
 imdb.db
+im.db
 !*.zip
